@@ -8,7 +8,7 @@ def new_gladiator(health, rage, damage_low, damage_high):
         'damage_low': damage_low,
         'damage_high': damage_high
     }
-    return new_gladiator
+    return gladiator
 
 
 def attack(attacker, defender):
@@ -34,3 +34,4 @@ def heal(gladiator):
 def is_dead(gladiator):
     if gladiator['health'] <= 0:
         return True
+    return False
