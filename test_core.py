@@ -7,6 +7,7 @@ def test_new_gladiator():
         'rage': 0,
         'damage_low': 10,
         'damage_high': 25,
+        'mana' : 30
     }
 
 
@@ -25,7 +26,8 @@ def test_heal():
         'health': 55,
         'rage': 15,
         'damage_low': 20,
-        'damage_high': 55
+        'damage_high': 55,
+        'mana' : 30
     }
 
 
@@ -36,7 +38,8 @@ def test_heal_no_rage():
         'health': 50,
         'rage': 0,
         'damage_low': 20,
-        'damage_high': 55
+        'damage_high': 55,
+        'mana' : 30
     }
 
 
@@ -64,4 +67,4 @@ def test_attack_highlow():
     attack(attacker, defender)
 
     assert attacker['rage'] == 15
-    assert defender['health'] <= 85 and defender['health'] >= 70
+    assert defender['health'] <= 85 and defender['health'] >= 70,

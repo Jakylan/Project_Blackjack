@@ -1,7 +1,7 @@
 from random import randint
 
 
-def new_gladiator(health, rage, damage_low, damage_high):
+def new_gladiator(health, rage, damage_low, damage_high, mana):
     gladiator = {
         'health': health,
         'rage': rage,
@@ -20,6 +20,19 @@ def attack(attacker, defender):
     else:
         defender['health'] = defender['health'] - damage
         attacker['rage'] = attacker['rage'] + 15
+
+def magic(attacker, defender):
+    spells = ['[A]ard', '[I]gni']
+    print(spells)
+    spell = input('What spell shall you cast?')
+    if spell == 'A':
+        if attacker ['mana'] >= 5
+        defender['health'] -= 10
+        defender['mana'] -= 5
+    elif spell == 'I':
+        if attacker ['mana'] >= 15
+        defender['health'] -= 20
+        defender['mana'] -= 15
 
 
 def heal(gladiator):
